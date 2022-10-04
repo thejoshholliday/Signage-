@@ -1,0 +1,183 @@
+@font-face {
+  font-family: mont;
+  src: url(Mont-HeavyDEMO.otf);
+}
+@font-face {
+	font-family: Ohno Blazeface;
+	src: url(ohnoBlazeface-12Point.ttf);
+}
+@font-face{
+	font-family: ethnocentric;
+	src: url(ethnocentric rg.otf);
+}
+body {
+	background-color: black;
+}
+.comp {
+	font-size: 180px;
+	top: 250px;
+	left: 62px;
+	font-family: ethnocentric;
+	letter-spacing: -18px;
+	/*-webkit-text-stroke: 5px #ff939c;*/
+	z-index: 1;
+	 position: absolute;
+	 transform: scaleY(1.5);
+}
+.website {
+	font-size: 35px;
+align-items: center;
+justify-content: center;
+display: flex;
+margin-top: 185px;
+font-family: helvetica;
+z-index: 4;
+font-weight: bolder;
+letter-spacing: 1px;
+margin-left: -53px;
+}
+.hours {
+	position: absolute;
+	top: 178px;
+	left: 1027px;
+	z-index: 4;
+	font-weight: bolder;
+	word-spacing: 20px;
+	transform: scaleY(1.25);
+}
+.hours:hover {
+	animation: wiggle 3s linear infinite;
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+.trapezoid {
+	 width: 1346px;
+  height: 360px;
+  transform: perspective(30px) rotateX(0.5deg);
+  background: #ffb3b9;
+  z-index: -2;
+  left: 45px;
+  position: absolute;
+  top: 130px;
+}
+.rectangle {
+  width: 1420px;
+  height: 120px;
+  background: #ff939c;
+  z-index: -2;
+  position: absolute;
+  top: 500px;
+}
+.points {
+	font-size: 72px;
+align-items: center;
+justify-content: center;
+display: flex;
+margin-left: -20px;
+	font-family: helvetica;
+	margin-top: 295px;
+	font-weight: bolder;
+	letter-spacing: -4px;
+}
+.points:hover {
+	animation: blink-animation 0.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.hours {
+	font-family: helvetica;
+	 position: absolute;
+	 font-size: 40px;
+	 margin-top: 5px;
+}
+.phone {
+	font-size:29px;
+	 position: absolute;
+	 left: 1190px;
+	 top: 545px;
+	 font-weight: bolder;
+	 font-family: helvetica;
+	  transform: scaleY(2.0);
+	  letter-spacing: 0.5px;
+}
+.address {
+	text-align: left;
+	z-index: 3;
+	font-size: 54px;
+	 position: absolute;
+	 top: 528px;
+	 left: 90px;
+	 color: #ff939c;
+	 font-family: mont;
+	 -webkit-text-stroke: 2px black;
+	 letter-spacing: -3px;
+}
+.logo {
+	left: 143px;
+	letter-spacing: 4px;
+	position: absolute;
+	font-size: 60px;
+	top: 178px;
+	font-family: Ohno Blazeface;
+	z-index; 5;
+}
+.logo:hover {
+	animation: pulse 0.5s infinite;
+}
+@keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+         }
+.anotheroval {
+	width: 230px;
+  height: 45px;
+  background: #ffb3b9;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50px;
+  left: 110px;
+  top: 180px;
+ z-index: -2;
+ position: absolute;
+}
+.oval {
+  width: 160px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  left: 55px;
+  top: 535px;
+ z-index: 2;
+ position: absolute;
+}
